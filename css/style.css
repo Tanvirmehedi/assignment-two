@@ -16,6 +16,24 @@
 
 /* CSS VARIABLE  */
 
+@keyframes btn_transition {
+  0% {
+    transform: translate(-2px);
+  }
+
+  20% {
+    transform: translate(5px);
+  }
+
+  50% {
+    transform: translate(-8px);
+  }
+  100% {
+    transform: translate(-5px);
+  }
+}
+/* ANIMATION */
+
 * {
   outline: 0;
   margin: 0;
@@ -37,6 +55,23 @@ body {
 .container {
   width: 85%;
   margin: 0 auto;
+}
+.btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 35px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+.section--title {
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 70px;
 }
 /* BASIC CSS  */
 
@@ -81,3 +116,108 @@ body {
 }
 
 /* END OF NAV BAR CSS    */
+
+#hero-part {
+  padding: 25px 0;
+}
+
+.hero-part--content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.hero-part--content-textBox {
+  padding-right: 14%;
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+}
+
+.hero-part--content-textBox h1 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 70px;
+}
+
+.hero-part--content-textBox p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.hero-part--btn {
+  color: #fff;
+  background-color: var(--button-bg-color);
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s linear;
+}
+.hero-part--btn > .icon {
+  margin-left: 10px;
+}
+.hero-part--btn:hover .icon {
+  animation: btn_transition 2s infinite;
+}
+.hero-part--content-imageBox {
+  text-align: center;
+}
+
+.hero-part--content-imageBox img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+/* END OF HERO PART CSS */
+#branding {
+  margin: 50px 0;
+  padding: 5px 200px;
+}
+.branding--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right bottom,
+      rgb(155 155 155 / 17%),
+      rgb(197 195 195 / 9%)
+    )
+    1 / 1 / 1 stretch;
+  padding: 5px 0;
+  border-image-slice: 1;
+  border-right: none;
+  border-left: none;
+}
+/* END OF BRANDING CSS */
+
+#product {
+  margin-top: 50px;
+}
+.product--content {
+  background-color: #f0f0f063;
+  margin: 20px 10px;
+  box-shadow: 1px 1px 37px 0px rgba(217, 212, 212, 0.75);
+}
+
+.product--cal {
+}
+.product--cal-title {
+}
+
+.product--cal-prize {
+}
+.product--cal-icon {
+}
+.product--btnBox {
+  text-align: right;
+}
+.product--btn {
+  padding: 0;
+  color: var(--button-bg-color);
+  background-color: transparent;
+  font-weight: 700;
+}
