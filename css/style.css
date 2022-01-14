@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500&display=swap");
+/* Font Css Link */
+
+:root {
+  /* COLOR */
+  --main-text-color: #3a3a3a;
+  --button-bg-color: #e02c6d;
+  --button-text-color: #ffffff;
+  --footer-bg-color: #0a0826;
+
+  /* FONT */
+  --main-font: "Poppins", sans-serif;
+  --secondary-font: "Inter", sans-serif;
+  --footer-font: "Manrope", sans-serif;
+}
+
+/* CSS VARIABLE  */
+
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+/* BASIC CSS  */
+
+#nav-bar {
+  padding: 25px 0;
+}
+
+.nav-bar--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar--logo {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.nav-bar--item {
+  display: flex;
+  align-items: center;
+}
+.nav-bar--items {
+  padding: 2px;
+}
+.nav-bar--link {
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: 500;
+}
+
+.nav-bar--link > .fa-search {
+  font-size: 1rem;
+}
+
+.nav-bar--link > .fa-cart-plus {
+  font-size: 1.2rem;
+}
+
+/* END OF NAV BAR CSS    */
