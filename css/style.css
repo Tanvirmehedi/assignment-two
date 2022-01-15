@@ -438,3 +438,39 @@ body {
     margin: 10px;
   }
 }
+
+/* Tablets View Media Query Css */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  #nav-bar {
+    display: none;
+  }
+  .hero-part--content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero-part--content-textBox {
+    text-align: center;
+    padding-right: 0;
+    grid-row: 2;
+  }
+  .hero-part--content-textBox h1 br {
+    display: none;
+  }
+  .hero-part--content-textBox p {
+    margin-bottom: 22px;
+  }
+  .hero-part--btn {
+    margin: auto;
+  }
+
+  .product--content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .subscribe--content > form {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .form-field {
+    width: 100%;
+    margin: 10px;
+  }
+}
