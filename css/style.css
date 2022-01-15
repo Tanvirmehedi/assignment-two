@@ -279,13 +279,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#subscribe h2 {
+  font-family: var(--main-font);
+  color: var(--footer-bg-color);
+  margin-left: 25px;
+  font-weight: 700;
+  padding: 20px 0;
+  font-size: 24px;
+}
 .subscribe--overlay {
   padding: 20px 0;
   width: 100%;
   height: 100%;
   position: relative;
   top: 0;
-  background-color: rgba(202, 196, 196, 0.418);
+  background-color: rgb(159 159 159 / 32%);
 }
 .subscribe--content > form {
   display: flex;
@@ -320,6 +328,7 @@ body {
   transform: scale(1.2);
 }
 /* SUBSCRIBE SECTION CSS END */
+
 #footer {
   padding: 40px 0;
   background-color: var(--footer-bg-color);
@@ -386,3 +395,46 @@ body {
   background-color: #fff;
 }
 /* FOOTER CSS END */
+
+/* CSS MEDIA QUERY */
+
+@media screen and (max-width: 480px) {
+  #nav-bar {
+    display: none;
+  }
+  .hero-part--content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero-part--content-textBox {
+    text-align: center;
+    padding-right: 0;
+    grid-row: 2;
+  }
+  .hero-part--content-textBox h1 br {
+    display: none;
+  }
+  .hero-part--content-textBox p {
+    margin-bottom: 22px;
+  }
+  .hero-part--btn {
+    margin: auto;
+  }
+  .branding--content {
+    flex-wrap: wrap;
+  }
+  .branding-image {
+    margin: 15px;
+  }
+  .product--content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .subscribe--content > form {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .form-field {
+    width: 100%;
+    margin: 10px;
+  }
+}
