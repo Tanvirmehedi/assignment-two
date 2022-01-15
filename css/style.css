@@ -273,8 +273,54 @@ body {
 
 /* END OF PRODUCT CSS */
 
-#footer {
+#subscribe {
   margin-top: 50px;
+  background: url("../bg/subscribtion-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.subscribe--overlay {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  background-color: rgba(202, 196, 196, 0.418);
+}
+.subscribe--content > form {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-field {
+  height: auto;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--footer-bg-color);
+  color: #e02c6d;
+  padding: 10px 10px;
+  font-size: 20px;
+}
+.subscribe--content-email {
+  width: 40%;
+  align-self: center;
+  height: 8rem;
+}
+.subscribe--content-textarea {
+  align-self: center;
+}
+.btn-submit {
+  transition: all 0.5s ease;
+  color: #fff;
+  background-color: var(--button-bg-color);
+}
+.btn-submit:hover {
+  transform: scale(1.2);
+}
+/* SUBSCRIBE SECTION CSS END */
+#footer {
   padding: 40px 0;
   background-color: var(--footer-bg-color);
   color: #ffffff;
@@ -339,3 +385,4 @@ body {
 .footer--social-box > li:hover a {
   background-color: #fff;
 }
+/* FOOTER CSS END */
