@@ -88,8 +88,16 @@ body {
 .nav-bar--logo {
   color: var(--main-text-color);
   font-family: var(--main-font);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 2rem;
+  letter-spacing: 2px;
+}
+.nav-bar--logo > i {
+  color: var(--button-bg-color);
+  font-size: 1.7rem;
+  background-color: var(--main-text-color);
+  padding: 5px;
+  border-radius: 15px;
 }
 .nav-bar--item {
   display: flex;
@@ -261,4 +269,73 @@ body {
   color: var(--button-bg-color);
   background-color: transparent;
   font-weight: 700;
+}
+
+/* END OF PRODUCT CSS */
+
+#footer {
+  margin-top: 50px;
+  padding: 40px 0;
+  background-color: var(--footer-bg-color);
+  color: #ffffff;
+}
+.footer--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer--content > span {
+  display: block;
+  margin-bottom: 15px;
+}
+.footer--logo {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+
+.footer--copyright {
+  font-family: var(--footer-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer--text {
+  font-family: var(--footer-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer--social-box {
+  display: flex;
+}
+
+.footer--social-box > li {
+  padding: 0 15px;
+}
+.footer--social-box > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background-color: #4036cf65;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.footer--social-box > li > a > i {
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.5s linear;
+}
+
+.footer--social-box > li:hover i {
+  color: #0a0826;
+}
+.footer--social-box > li:hover a {
+  background-color: #fff;
 }
